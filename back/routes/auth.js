@@ -14,6 +14,9 @@ router.post("/", async (req, res) => {
 });
 
 router.post("/register", async (req, res) => {
+  const { firstname, lastname } = req.body;
+  req.body.username = `${firstname} ${lastname}`;
+
   try {
     const { data } = await axios.post(
       "https://strapi3333.herokuapp.com/api/auth/local/register",
