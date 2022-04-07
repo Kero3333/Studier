@@ -4,9 +4,9 @@ const app = express();
 
 const PORT = 3000 || process.env.PORT;
 
-const login = require("./routes/login");
+const auth = require("./routes/auth");
 
-app.use("/login", login);
+app.use("/auth", auth);
 
 app.listen(PORT, () => {
   console.log(`Server listening onn port ${PORT}`);
