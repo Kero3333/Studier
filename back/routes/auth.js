@@ -4,7 +4,7 @@ const axios = require("axios");
 router.post("", async (req, res) => {
   try {
     const { data } = await axios.post(
-      "http://127.0.0.1:1337/api/auth/local",
+      "https://strapi3333.herokuapp.com/api/auth/local",
       req.body
     );
     res.send(data);
