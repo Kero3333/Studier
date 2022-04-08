@@ -14,5 +14,5 @@ app.use(cors());
 app.use("/auth", auth);
 
 app.listen(PORT, () => {
-  console.log(`Server listening onn port ${PORT}`);
+  console.log(`Server listening on port ${PORT}`);
 });
