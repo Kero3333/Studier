@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FF7200;
+    font-family: 'Mali', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primar-color-orange : #FF7200;
+    --secondary-color-orange-clair: #fd811b9a;
+    --color-black : #000;
+}
+
+.containerSearch{
+    display: none;
+}
+.logo{
+    height: 50px;
+    margin: 10px auto 20px;
+    display: block;
+}
+nav{
+    border-top: solid 1px var(--primar-color-orange);
+}
