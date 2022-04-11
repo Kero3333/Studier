@@ -21,16 +21,21 @@ Content-Type: application/json
 
 ###
 
-POST https://strapi3333.herokuapp.com//api/announces
+GET https://strapi3333.herokuapp.com/api/announces
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDYsImlhdCI6MTY0OTY2ODU0MywiZXhwIjoxNjUyMjYwNTQzfQ.rNRBVJudLzddt-1WaV9yF6xage4so5QQquO5J68kpDE
 
-{
+### 
 
-  "identifier": "jean.bon@gmail.com",
-  "password": "bonjour123"
-}
+GET https://strapi3333.herokuapp.com/api/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDYsImlhdCI6MTY0OTY2ODU0MywiZXhwIjoxNjUyMjYwNTQzfQ.rNRBVJudLzddt-1WaV9yF6xage4so5QQquO5J68kpDE
 
 
-
+###
 GET https://strapi3333.herokuapp.com/api/carpools
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
+
+###
+GET https://strapi3333.herokuapp.com/api/announces
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
