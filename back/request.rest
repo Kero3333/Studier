@@ -1,0 +1,32 @@
+POST https://strapi3333.herokuapp.com/api/auth/local
+Content-Type: application/json
+
+{
+  "identifier": "jean.bon@gmail.com",
+  "password": "bonjour123"
+}
+
+###
+
+POST https://strapi3333.herokuapp.com/api/auth/local/register
+Content-Type: application/json
+
+{
+  "username": "JeanBon",
+  "firstname": "Jean",
+  "lastname": "Bon",
+  "email": "jean.bon@gmail.com",
+  "password": "bonjour123"
+}
+
+###
+
+POST https://strapi3333.herokuapp.com//api/announces
+Content-Type: application/json
+
+{
+
+  "identifier": "jean.bon@gmail.com",
+  "password": "bonjour123"
+}
+

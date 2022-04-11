@@ -13,7 +13,7 @@ form.addEventListener("submit", async (e) => {
       identifier,
       password,
     });
-    console.log(data);
+    window.alert("connected");
   } catch (err) {
     console.log(err.message);
   }
