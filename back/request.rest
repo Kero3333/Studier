@@ -21,12 +21,13 @@ Content-Type: application/json
 
 ###
 
-POST https://strapi3333.herokuapp.com//api/announces
+GET https://strapi3333.herokuapp.com/api/announces
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDYsImlhdCI6MTY0OTY2ODU0MywiZXhwIjoxNjUyMjYwNTQzfQ.rNRBVJudLzddt-1WaV9yF6xage4so5QQquO5J68kpDE
 
-{
+### 
 
-  "identifier": "jean.bon@gmail.com",
-  "password": "bonjour123"
-}
+GET https://strapi3333.herokuapp.com/api/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDYsImlhdCI6MTY0OTY2ODU0MywiZXhwIjoxNjUyMjYwNTQzfQ.rNRBVJudLzddt-1WaV9yF6xage4so5QQquO5J68kpDE
 
