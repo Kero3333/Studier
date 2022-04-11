@@ -4,13 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #FF7200;
     font-family: 'Mali', Arial, Helvetica, sans-serif;
 }
 
 :root {
     --primar-color-orange : #FF7200;
-    --secondary-color-orange-clair: #fd811b9a;
+    --secondary-color-orange-clair: #FFF0E3;
     --color-black : #000;
 }
 
@@ -23,5 +22,12 @@
     display: block;
 }
 nav{
+    border-top: solid 1px var(--primar-color-orange);
+}
+main{
+    color: #FF7200;
+}
+
+footer{
     border-top: solid 1px var(--primar-color-orange);
 }
