@@ -4,9 +4,16 @@ const axios  = require('axios');
 const router = Router();
 
 router.post("/" ,  async (req , res ) =>{
+
+Object.keys(req.body);
+let variable = "";
+
+Object.keys(req.body).forEach((element) =>{
+    variable += `filters[$or][0][${element}][$eq]=${req.body[element]}&filters`;
+});
+console.log(variable);
 try {
-    const {Start , Arrive , Price} = req.body;
-    const {data} = await axios.get(`https://strapi3333.herokuapp.com/api/carpools?filters[$or][0][Start][$eq]=${Start}&filters[$or][1][Arrive][$eq]=${Arrive}&filters[$or][2][Price][$eq]=${Price}` , {
+    const {data} = await axios.get(`https://strapi3333.herokuapp.com/api/carpools?${variable}` , {
         headers: {'Authorization': req.headers.authorization}
     });
    res.status(200).send(data); 
