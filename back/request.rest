@@ -39,7 +39,11 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6M
 ###
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 GET https://strapi3333.herokuapp.com/api/announces
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate[activity][fields][0]=id&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
 =======
 GET https://strapi3333.herokuapp.com/api/announces?populate[activity][fields][0]=id&filters[activity][id][$gt]=0
 >>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
@@ -52,7 +56,11 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6M
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 GET https://strapi3333.herokuapp.com/api/jobs
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate=activity&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
 =======
 GET https://strapi3333.herokuapp.com/api/announces?populate=activity&filters[activity][id][$gt]=0
 >>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
