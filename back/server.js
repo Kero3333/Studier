@@ -16,7 +16,6 @@ app.use(cors());
 
 app.use("/auth", auth);
 app.use("/announce", announce);
-
 app.use("/covoiturage", covoiturage);
 
 app.listen(PORT, () => {

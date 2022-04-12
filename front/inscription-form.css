@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primar-color-orange : #FF7200;
+    --secondary-color-orange-clair: #fd811b9a;
+    --color-black : #000;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Mali',arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: #FF7200;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    overflow: hidden;
+    max-width: 100%;
+}
+.header img{
+    width: 30px;
+    margin-left: 22rem;
+    margin-top: 1rem;
+}
+.header h2{
+    padding: 20px;
+    margin-left: 3.5rem;
+}
+.form{
+    padding: 20px 30px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+   display: inline-block;
+   margin-bottom: 6px;
+   margin-top: 0.5rem;
+}
+.form-control input{
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  
+ }
+
+ .form button{
+     background-color: #7B61FF;
+     border: 2px solid #7B61FF;
+     border-radius: 4px;
+     font-family: inherit;
+     color: #fff;
+     display: block;
+     font-size: 18px;
+     padding: 10px;
+     width: 100%;
+     margin-top: 2rem;
+ }
+
+
