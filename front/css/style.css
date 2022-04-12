@@ -4,19 +4,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #FF7200;
     font-family: 'Mali', Arial, Helvetica, sans-serif;
 }
 
 :root {
     --primar-color-orange : #FF7200;
-    --secondary-color-orange-clair: #fd811b9a;
+    --secondary-color-orange-clair: #FFF0E3;
     --color-black : #000;
 }
-
-.containerSearch{
-    display: none;
+header{
+    border-bottom: 1px solid var(--primar-color-orange);
+    margin-bottom: 15px;
 }
+.head{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+}
+
 .logo{
     height: 50px;
     margin: 10px auto 20px;
@@ -25,3 +30,25 @@
 nav{
     border-top: solid 1px var(--primar-color-orange);
 }
+main{
+    color: #FF7200;
+    text-align: center;
+}
+
+footer{
+    border-top: solid 1px var(--primar-color-orange);
+}
+
+/* Page profil */
+.card{
+    background-color: var(--secondary-color-orange-clair);
+}
+.card-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
