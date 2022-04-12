@@ -12,10 +12,16 @@
     --secondary-color-orange-clair: #FFF0E3;
     --color-black : #000;
 }
-
-.containerSearch{
-    display: none;
+header{
+    border-bottom: 1px solid var(--primar-color-orange);
+    margin-bottom: 15px;
 }
+.head{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+}
+
 .logo{
     height: 50px;
     margin: 10px auto 20px;
@@ -26,8 +32,23 @@ nav{
 }
 main{
     color: #FF7200;
+    text-align: center;
 }
 
 footer{
     border-top: solid 1px var(--primar-color-orange);
 }
+
+/* Page profil */
+.card{
+    background-color: var(--secondary-color-orange-clair);
+}
+.card-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
