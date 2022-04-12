@@ -16,13 +16,17 @@ section{
 section img{
     position: absolute;
     width: 30px;
-    right: 11rem;
-    top: 8rem;
+    right: 37.4rem;
+    top: 3rem;
 }
 section .imgBx{
     position: relative;
     width: 50%;
+    
 
+}
+.Logo{
+    width: 210px;
 }
 
 
@@ -43,8 +47,9 @@ section .imgBx img{
     position: absolute;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
+    top:0;
 
 }
 
@@ -95,14 +100,14 @@ section .contentBx .formBx .inputBx input{
 }
 
 section .contentBx .formBx .inputBx input[type="submit"]{
-    background: #7B61FF;
+    background: #FF7200;
     outline: none;
     border: none;
     font-weight: 500;
     cursor: pointer;
 }
 section .contentBx .formBx .inputBx input[type="submit"]:hover{
-    background: #FF7200;
+    background: #7B61FF;
  
 }
 section .contentBx .formBx .enregistrer input[type="checkbox"]{
@@ -112,4 +117,39 @@ section .contentBx .formBx .enregistrer{
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 400;
+}
+
+@media screen  and (max-width:700px) {
+
+
+    section .contentBx .formBx h2{
+        font-size: 14px;
+    }
+    section .contentBx .formBx .inputBx span{
+        font-size: 13px;
+    }
+    section .contentBx .formBx .inputBx input{
+        width: 120%;
+        padding: 8px;
+        margin-left: -0.3rem;
+    
+    }
+    .Logo{
+        width: 140px;
+    }
+    section img{
+        position: absolute;
+        width: 30px;
+        right: 7.4rem;
+        top: 2rem;
+    }
+    section .contentBx .formBx .enregistrer{
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+   .contentBx{
+       margin-left: -1rem;
+   }
+
 }

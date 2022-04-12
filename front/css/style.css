@@ -12,20 +12,38 @@
     --secondary-color-orange-clair: #FFF0E3;
     --color-black : #000;
 }
+
+.carousel-inner{
+ left: 24rem;
+}
+
+
 header{
     border-bottom: 1px solid var(--primar-color-orange);
     margin-bottom: 15px;
 }
+
 .head{
     display: flex;
     align-content: space-around;
     justify-content: center;
+    margin-bottom: 6rem;
+}
+.icons{
+    width: 65px;
+    padding: 22px;
+}
+.containerSearch input{
+    margin: 20px;
 }
 
 .logo{
     height: 50px;
     margin: 10px auto 20px;
     display: block;
+}
+.titre{
+    padding: 2rem;
 }
 nav{
     border-top: solid 1px var(--primar-color-orange);
