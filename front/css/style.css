@@ -12,7 +12,10 @@
     --secondary-color-orange-clair: #FFF0E3;
     --color-black : #000;
 }
-
+header{
+    border-bottom: 1px solid var(--primar-color-orange);
+    margin-bottom: 15px;
+}
 .head{
     display: flex;
     align-content: space-around;
