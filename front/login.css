@@ -1,155 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mali',arial;
-}
-
-section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-section img{
-    position: absolute;
-    width: 30px;
-    right: 37.4rem;
-    top: 3rem;
-}
-section .imgBx{
-    position: relative;
-    width: 50%;
-    
-
-}
-.Logo{
-    width: 210px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mali", arial;
 }
 
-
-section .imgBx:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(100deg,#3712ed,#e46803);
-    z-index: 1;
-    mix-blend-mode: screen;
-    
-    
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
-section .imgBx img{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    top:0;
-
+section img {
+  position: absolute;
+  width: 30px;
+  right: 37.4rem;
+  top: 3rem;
+}
+section .imgBx {
+  position: relative;
+  width: 50%;
+}
+.Logo {
+  width: 210px;
 }
 
-
-section .contentBx{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
+section .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(100deg, #3712ed, #e46803);
+  z-index: 1;
+  mix-blend-mode: screen;
 }
-section .contentBx .formBx{
-    width: 50%;
-}
-section .contentBx .formBx h2{
-    color: #FF7200;
-    font-weight: 600;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #7B61FF;
-    display: inline-block;
-    letter-spacing: 1px;
-}
-section .contentBx .formBx .inputBx{
-    margin-bottom: 20px;
-}
-section .contentBx .formBx .inputBx span{
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: inline-block;
-    color: #FF7200;
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-section .contentBx .formBx .inputBx input{
-    width: 100%;
-    padding: 10px 20px;
-    outline: none;
-    font-weight: 400;
-    border: 1px solid #7B61FF;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #fff;
-    background: transparent;
-    border-radius: 30px;
+section .imgBx img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
 }
 
-section .contentBx .formBx .inputBx input[type="submit"]{
-    background: #FF7200;
-    outline: none;
-    border: none;
-    font-weight: 500;
-    cursor: pointer;
+section .contentBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
 }
-section .contentBx .formBx .inputBx input[type="submit"]:hover{
-    background: #7B61FF;
- 
+section .contentBx .formBx {
+  width: 50%;
 }
-section .contentBx .formBx .enregistrer input[type="checkbox"]{
+section .contentBx .formBx h2 {
+  color: #ff7200;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #7b61ff;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx {
+  margin-bottom: 20px;
+}
+section .contentBx .formBx .inputBx span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #ff7200;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #7b61ff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  background: transparent;
+  border-radius: 30px;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"] {
+  background: #ff7200;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+section .contentBx .formBx .inputBx input[type="submit"]:hover {
+  background: #7b61ff;
+}
+section .contentBx .formBx .enregistrer input[type="checkbox"] {
   margin-right: 0.5rem;
 }
-section .contentBx .formBx .enregistrer{
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 400;
+section .contentBx .formBx .enregistrer {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
-@media screen  and (max-width:700px) {
-
-
-    section .contentBx .formBx h2{
-        font-size: 14px;
-    }
-    section .contentBx .formBx .inputBx span{
-        font-size: 13px;
-    }
-    section .contentBx .formBx .inputBx input{
-        width: 120%;
-        padding: 8px;
-        margin-left: -0.3rem;
-    
-    }
-    .Logo{
-        width: 140px;
-    }
-    section img{
-        position: absolute;
-        width: 30px;
-        right: 7.4rem;
-        top: 2rem;
-    }
-    section .contentBx .formBx .enregistrer{
-        margin-bottom: 10px;
-        font-size: 12px;
-        font-weight: 400;
-    }
-   .contentBx{
-       margin-left: -1rem;
-   }
-
+@media screen and (max-width: 700px) {
+  section .contentBx .formBx h2 {
+    font-size: 14px;
+  }
+  section .contentBx .formBx .inputBx span {
+    font-size: 13px;
+  }
+  section .contentBx .formBx .inputBx input {
+    width: 120%;
+    padding: 8px;
+    margin-left: -0.3rem;
+  }
+  .Logo {
+    width: 140px;
+  }
+  section img {
+    position: absolute;
+    width: 30px;
+    right: 7.4rem;
+    top: 2rem;
+  }
+  section .contentBx .formBx .enregistrer {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .contentBx {
+    margin-left: -1rem;
+  }
 }

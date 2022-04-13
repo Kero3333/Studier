@@ -9,12 +9,17 @@ form.addEventListener("submit", async (e) => {
   const password = e.target.pass.value;
 
   try {
-    const { data } = await axios.post("http://127.0.0.1:3000/auth", {
+    const {
+      data: { jwt },
+    } = await axios.post("https://strapi3333.herokuapp.com/api/auth/local", {
       identifier,
       password,
     });
-    window.alert("connected");
+    localStorage.setItem("token", jwt);
+    document.location.href = "home.html";
   } catch (err) {
-    console.log(err.message);
+    if (err.message === "Request failed with status code 400") {
+      window.alert("L'identifiant ou le mot de passe est incorrect");
+    }
   }
 });
