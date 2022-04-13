@@ -66,10 +66,6 @@ a {
   text-decoration: none;
 }
 
-nav {
-  font-family: monospace;
-}
-
 ul {
   color: var(--primar-color-orange);
   list-style: none;
