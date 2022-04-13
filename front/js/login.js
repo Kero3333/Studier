@@ -16,7 +16,7 @@ form.addEventListener("submit", async (e) => {
       password,
     });
     localStorage.setItem("token", jwt);
-    document.location.href = "home.html";
+    document.location.href = "index.html";
   } catch (err) {
     if (err.message === "Request failed with status code 400") {
       window.alert("L'identifiant ou le mot de passe est incorrect");

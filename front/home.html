@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Stu:Dier</title>
+    <title>Accueil Stu:Dier</title>
 </head>
 <body>
     <header>
@@ -17,12 +17,41 @@
                 </div>
             </div>
     
-           <a class="logo"href="./home.html"><img class="logo" src="./img/logo.jpg" alt="logo"></a> 
+           <a class="logo"href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"></a> 
     
             <a href="./favoris.html"><img class="icons" src="./img/heart.jpg" alt=""></a>
             <a href="./login.html"><img class="icons"  src="./img/user.jpg" alt=""></a>
 
         </div>
+
+
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="./home.html" aria-haspopup="true"><h2>Accueil</h2></a>
+                </li>
+                <li class="nav-item"><a href="./annonce.html" aria-haspopup="true"><h2>Travail</h2></a>
+                    <ul class="dropdown" aria-label="submenu">
+                      <li><a href="#">Job étudiant</a></li>
+                      <li><a href="#">Stage</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="./annonce.html" aria-haspopup="true"><h2>Loisir</h2></a>
+                    <ul class="dropdown" aria-label="submenu">
+                      <li><a href="#">Sport</a></li>
+                      <li><a href="#">Concert</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="./annonce.html" aria-haspopup="true"><h2>Service</h2></a>
+                    <ul class="dropdown" aria-label="submenu">
+                      <li><a href="#">Logement</a></li>
+                      <li><a href="#">Initiative solidaire</a></li>
+                      <li><a href="#">Transport</a></li>
+                      <li><a href="#">Santé</a></li>
+                    </ul>
+                </li>
+              </ul>
+        </nav>
+        
         
 
         <!-- <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
@@ -33,264 +62,278 @@
             <a class="navbar-brand" href="#user.html"><img src="./img/user.png" alt="User"></a>
         </nav> -->
     </header>
-
     <main>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <!-- Carousel Principal -->
+        <div id="carouselSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-50 " src="./img/colorFun.jpg" alt="First slide">
+                <img src="./img/colorFun.jpg" class="d-block w-100" alt="colorFun"/>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-50" src="./img/solidays.jpg" alt="Second slide">
+                <img src="./img/solidays.jpg" class="d-block w-100" alt="Solidays"/>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-50" src="./img/journéeActivCampus.jpg" alt="Third slide">
+                <img src="./img/journéeActivCampus.jpg" class="d-block w-100" alt="Journée Campus"/>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-50" src="./img/campus.jpg" alt="Four slide">
-              </div>
-            </div>
-        </div>
-
-        <h1 class="titre">Les soirées organisées par nos BDE</h1>
-
-          <section class="pt-5 pb-5">
-            <div class="container">
-              <div class="row">
-                  
-                <div class="col-12">
-                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-          
-                    <div class="carousel-inner2">
-                      <div class="carousel-item active">
-                        <div class="row">
-          
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/109.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/event2.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/event8.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/event5.jpg">
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                      
-                      
-                      <div class="carousel-item">
-                        <div class="row">
-          
-                            <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/event3.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/event6.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/event4.jpg">
-          
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/event7.jpg">
-          
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <h1 class="titre">Nos sports proposés</h1>
-          <section class="pt-5 pb-5">
-            <div class="container">
-              <div class="row">
-                  
-                <div class="col-12">
-                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-          
-                    <div class="carousel-inner3">
-                      <div class="carousel-item active">
-                        <div class="row">
-          
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport4.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport7.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport3.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport8.png">
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                      
-                      
-                      <div class="carousel-item">
-                        <div class="row">
-          
-                                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport2.png">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport5.png">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport.jpg">
-          
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/sport6.png">
-          
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <h1 class="titre">Concerts</h1>
-          <section class="pt-5 pb-5">
-            <div class="container">
-              <div class="row">
-                  
-                <div class="col-12">
-                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-          
-                    <div class="carousel-inner4">
-                      <div class="carousel-item active">
-                        <div class="row">
-          
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert5.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert8.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert3.jpg">
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                      
-                      
-                      <div class="carousel-item">
-                        <div class="row">
-          
-                                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert4.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert7.jpg">
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert6.jpg">
-          
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <div class="card">
-                              <img class="img-fluid" alt="100%x280" src="./img/concert2.png">
-          
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <h1>Avis</h1>
-          <div class="card-columns">
-            <div class="card" style="background-color: #FFF0E3;">
-                <h4>Mathilde</h4>
-              <div class="card-body ">
-                <p class="card-text" style="color: #000;">Woooow trop bien, je peux découvrir pleins d’informations et tout est compréhensible !</p>
-              </div>
-            </div>
-            <div class="card" style="background-color: #FFF0E3;">
-                <h4>Lucas</h4>
-              <div class="card-body ">
-                <p class="card-text" style="color: #000;">Cool, le site est super. Il est dynamique et compréhensible. 🥳</p>
-              </div>
-            </div>
-            <div class="card" style="background-color: #FFF0E3;">
-                <h4>Maxime</h4>
-              <div class="card-body ">
-                <p class="card-text" style="color: #000;">Merci beaucoup ! Grâce à vous, j'ai pû me trouver facilement un petit boulot! 😄</p>
+                <img src="./img/campus.jpg" class="d-block w-100" alt="Campus"/>
               </div>
             </div>
           </div>
-          
 
+          <H1>Les soirées organisées par nos BDE</H1>
 
+          <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+              
+            <div class="col-12">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+      
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+      
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/109.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/event8.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/event5.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/event3.jpg">
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="carousel-item">
+                    <div class="row">
+      
+                                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/event6.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/event2.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/event7.jpg">
+      
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/event4.jpg">
+      
+                        </div>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Carousel Sport -->
+      <h1>Nos sports proposés</h1>
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+              
+            <div class="col-12">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+      
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+      
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport8.png">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport5.png">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport3.jpg">
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="carousel-item">
+                    <div class="row">
+      
+                                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport6.png">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport2.png">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport7.jpg">
+      
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/sport4.jpg">
+      
+                        </div>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel Concert -->
+      <h1>Concerts</h1>
+       <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+              
+            <div class="col-12">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+      
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+      
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/concert.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/concert8.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/concert5.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/concert3.jpg">
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="carousel-item">
+                    <div class="row">
+      
+                                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/concert6.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/concert2.png">
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img/concert7.jpg">
+      
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card">
+                          <img class="img-fluid" alt="100%x280" src="./img//concert4.jpg">
+      
+                        </div>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Avis section -->
+      <h2>Avis</h2>
+      <section class="avis">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Mathilde ⭐️⭐️⭐️✨</h5>
+                  <p class="card-text">Woooow trop bien, je peux découvrir pleins d’informations!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Yuna ⭐️⭐️⭐️✨✨</h5>
+                  <p class="card-text">Cool, le site est super. Il est dynamique et compréhensible.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Lucas ⭐️⭐️⭐️</h5>
+                  <p class="card-text">En temps que pro, je peux mettre mes annonces pour les jeunes,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      </section>
+     
     </main>
+
     <footer class="text-center" >
         <div class="container pt-4">
           <section class="mb-4">
@@ -328,7 +371,6 @@
           <a style="color: #FF7200;"  href="https://www.figma.com/file/fRZHc1k33myeKiUqCrSsa1/Stu%3ADier?node-id=27%3A2">STUDIER</a>
         </div>
       </footer>
-
 
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

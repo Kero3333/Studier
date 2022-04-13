@@ -13,9 +13,13 @@
     --color-black : #000;
 }
 
-.carousel-inner{
- left: 24rem;
+body{
+    overflow-x:hidden;
 }
+
+/* .carousel-inner{
+ left: 24rem;
+} */
 
 
 header{
@@ -28,6 +32,7 @@ header{
     align-content: space-around;
     justify-content: center;
     margin-bottom: 6rem;
+    
 }
 .icons{
     width: 65px;
@@ -49,14 +54,91 @@ nav{
     border-top: solid 1px var(--primar-color-orange);
 }
 main{
-    color: #FF7200;
+    color: var(--primar-color-orange);
     text-align: center;
 }
 
 footer{
     border-top: solid 1px var(--primar-color-orange);
 }
+/* NavBar Dropdown */
+a {
+  text-decoration: none;
+}
 
+ul {
+  color: var(--primar-color-orange);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: var(--primar-color-orange);
+  background: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+
+
+li:hover,
+li:focus-within {
+  /* background: red; */
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  color: var(--primar-color-orange);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+li a {
+  color: var(--primar-color-orange);
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+/* Page Accueil */
+.card-body{
+  background-color: var(--secondary-color-orange-clair);
+  text-align: left;
+}
+#carouselSlidesOnly{
+  width: 200vh;
+  left: 2rem;
+}
+
+.avis{
+  margin-bottom: 5rem;
+}
 /* Page profil */
 .card{
     background-color: var(--secondary-color-orange-clair);
@@ -136,6 +218,11 @@ footer{
   flex-direction: column;
   text-align:left;
 }
+
+.flex-column h4 {
+  font-weight: bold;
+}
+
 
 
 @media only screen and (max-width: 400px) {
