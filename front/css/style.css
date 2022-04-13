@@ -5,13 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mali', Arial, Helvetica, sans-serif;
-    overflow-x:hidden;
 }
 
 :root {
     --primar-color-orange : #FF7200;
     --secondary-color-orange-clair: #FFF0E3;
     --color-black : #000;
+}
+
+body{
+    overflow-x:hidden;
 }
 
 .carousel-inner{
@@ -29,6 +32,7 @@ header{
     align-content: space-around;
     justify-content: center;
     margin-bottom: 6rem;
+    
 }
 .icons{
     width: 65px;
