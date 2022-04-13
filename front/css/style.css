@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mali', Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
 }
 
 :root {
