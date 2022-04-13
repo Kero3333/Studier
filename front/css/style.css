@@ -135,6 +135,10 @@ ul li ul li {
   width: 200vh;
   left: 2rem;
 }
+
+.avis{
+  margin-bottom: 5rem;
+}
 /* Page profil */
 .card{
     background-color: var(--secondary-color-orange-clair);
