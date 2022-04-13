@@ -31,7 +31,7 @@ async function element(){
      <div class="item">
     <div class="img-details">
     <img  src="${element.attributes.picture}">
-    <img class="favorite-item" src="./img/heart.jpg" alt="favorite-icon">
+    <img class="favorite-item" src='https://res.cloudinary.com/dvpi39ag2/image/upload/v1649853368/img/heart_gerq0k.png' alt="favorite-icon">
     </div>
 <div class="flex-card">
     <img class="logo-profil" src="${element.attributes.user.data.attributes.picture_profile}" alt="logo">
