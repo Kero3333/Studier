@@ -35,3 +35,45 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDQsImlhdCI6M
 
 
 
+
+###
+GET https://strapi3333.herokuapp.com/api/carpools
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
+
+###
+
+GET https://strapi3333.herokuapp.com/api/announces
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate[activity][fields][0]=id&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate[activity][fields][0]=id&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate[activity][fields][0]=id&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
+
+###
+
+
+GET https://strapi3333.herokuapp.com/api/jobs
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate=activity&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate=activity&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
+=======
+GET https://strapi3333.herokuapp.com/api/announces?populate=activity&filters[activity][id][$gt]=0
+>>>>>>> 4af26e3102152e8c7390e65a273298a3ddfdea3d
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
+###
+GET https://strapi3333.herokuapp.com/api/carpools?filters[$or][0][${element}][$eq]=${req.body[element]}&filters`;
+
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
+
+###
+GET https://strapi3333.herokuapp.com/api/jobs?filters[$or][0][${element}][$eq]=${req.body[element]}&filters
+
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
