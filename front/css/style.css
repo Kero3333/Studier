@@ -215,6 +215,11 @@ ul li ul li {
   text-align:left;
 }
 
+.flex-column h4 {
+  font-weight: bold;
+}
+
+
 
 @media only screen and (max-width: 400px) {
   .masonry {
