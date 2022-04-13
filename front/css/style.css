@@ -13,9 +13,13 @@
     --color-black : #000;
 }
 
-.carousel-inner{
- left: 24rem;
+body{
+    overflow-x:hidden;
 }
+
+/* .carousel-inner{
+ left: 24rem;
+} */
 
 
 header{
@@ -28,6 +32,7 @@ header{
     align-content: space-around;
     justify-content: center;
     margin-bottom: 6rem;
+    
 }
 .icons{
     width: 65px;
@@ -57,6 +62,15 @@ footer{
     border-top: solid 1px var(--primar-color-orange);
 }
 
+/* Page Accueil */
+.card-body{
+  background-color: var(--secondary-color-orange-clair);
+  text-align: left;
+}
+#carouselSlidesOnly{
+  width: 200vh;
+  left: 2rem;
+}
 /* Page profil */
 .card{
     background-color: var(--secondary-color-orange-clair);

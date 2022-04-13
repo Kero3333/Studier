@@ -21,15 +21,19 @@ Content-Type: application/json
 
 ###
 
-GET https://strapi3333.herokuapp.com/api/announces
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDYsImlhdCI6MTY0OTY2ODU0MywiZXhwIjoxNjUyMjYwNTQzfQ.rNRBVJudLzddt-1WaV9yF6xage4so5QQquO5J68kpDE
+GET https://strapi3333.herokuapp.com/api/announces?populate=activity&filters[type][$contains]=
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDQsImlhdCI6MTY0OTY4MzU3MCwiZXhwIjoxNjUyMjc1NTcwfQ._PXBWkNO-J9f3vq_T8YJ7554Xdy_ezoMfg3tlsEl4ek
 
-### 
+###
 
-GET https://strapi3333.herokuapp.com/api/users/me
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDYsImlhdCI6MTY0OTY2ODU0MywiZXhwIjoxNjUyMjYwNTQzfQ.rNRBVJudLzddt-1WaV9yF6xage4so5QQquO5J68kpDE
+GET https://strapi3333.herokuapp.com/api/announces?populate=announces&filters[type][id][$gt]=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDQsImlhdCI6MTY0OTY4MzU3MCwiZXhwIjoxNjUyMjc1NTcwfQ._PXBWkNO-J9f3vq_T8YJ7554Xdy_ezoMfg3tlsEl4ek
+
+###
+GET https://strapi3333.herokuapp.com/api/announces?populate=*
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDQsImlhdCI6MTY0OTY4MzU3MCwiZXhwIjoxNjUyMjc1NTcwfQ._PXBWkNO-J9f3vq_T8YJ7554Xdy_ezoMfg3tlsEl4ek
+
+
 
 
 ###
