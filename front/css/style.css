@@ -44,6 +44,9 @@ header {
 .titre {
   padding: 2rem;
 }
+.sidenav, .btnMobile, #navBar, #carouselExampleSlidesOnlyMobile, .menuMobile{
+  display: none;
+}
 nav {
   border-top: solid 1px var(--primar-color-orange);
 }
@@ -287,3 +290,66 @@ img{
 
 /* Responsive */
 /* Page d'accueil */
+@media screen and (max-width: 1100px)
+{
+  header{
+    border: none;
+  }
+  .navbar, .head, .navbar-toggler, .container{
+    display: none;
+  }
+  #navBar, #carouselExampleSlidesOnlyMobile, .sidenav, .menuMobile, .btnMobile{
+    display: flex;
+  }
+  #navBar img{
+    height: 20px;
+  }
+  .btnMobile{
+    color: var(--primar-color-orange);
+  }
+  .btnMobile{
+    width: 10px;
+    margin-top: .8em;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--primar-color-orange);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .titre{
+    font-size: 1.5em;
+  }
+  .card h4{
+    font-size: .95em;
+  }
+  .card-body p{
+    font-size: .85em;
+  }
+    
+}

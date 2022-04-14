@@ -32,14 +32,30 @@
           ><img class="icons" src="./img/user.jpg" alt=""
         /></a>
       </div>
+      <!-- Menu Mobile -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a class="linkMobile" href="#">Actualité</a></li>
+          <li><a class="linkMobile" href="#">Travail</a></li>
+          <li><a class="linkMobile" href="#">Loisir</a></li>
+          <li><a class="linkMobile" href="#">Service</a></li>
+        </ul>
+      </div>
+      <div class="menuMobile">
+        <span class="btnMobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"/></a>
+      </div>
+      
 
-      <!-- <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#home.html"><img src="./img/accueil.png" alt="Home"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/search.png" alt="Search"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
-            <a class="navbar-brand" href="#favoris.html"><img src="./img/heart.png" alt="Heart"></a> 
-            <a class="navbar-brand" href="#user.html"><img src="./img/user.png" alt="User"></a>
-        </nav> -->
+      <!-- Mobile NavBar -->
+      <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html"><img src="./img/home.png" alt="Home"></a>
+            <a class="navbar-brand" href="./annonce.html"><img src="./img/search.jpg" alt="Search"></a>
+            <a class="navbar-brand" href="#search.html"><img id="postIt" src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
+            <a class="navbar-brand" href="./favoris.html"><img src="./img/heart.jpg" alt="Heart"></a> 
+            <a class="navbar-brand" href="./profil.html"><img src="./img/user.jpg" alt="User"></a>
+        </nav>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- Container wrapper -->
@@ -89,11 +105,10 @@
                   <li>
                     <a class="dropdown-item" href="#">Stage</a>
                   </li>
-                  <<<<<<< HEAD
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
-                    =======
+                   
                   </li>
 
                   <li class="nav-item">
@@ -132,7 +147,6 @@
                         >
                       </li>
                     </ul>
-                    >>>>>>> b377aac78f84d9396dd71172e6612dd029f9de07
                   </li>
                 </ul>
               </li>
@@ -200,7 +214,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -334,6 +348,52 @@
         </div>
       </section>
 
+      <!-- Mobile Slider -->
+      <div
+        id="carouselExampleSlidesOnlyMobile"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-50"
+              src="./img/109.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-50"
+              src="./img/event2.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-50"
+              src="./img/event8.jpg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/event5.jpg" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/event3.jpg" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/event6.jpg" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/event4.jpg" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/event7.jpg" alt="Four slide" />
+          </div>
+        </div>
+      </div>
+
       <h1 class="titre">Nos sports proposés</h1>
       <section class="pt-5 pb-5">
         <div class="container">
@@ -432,6 +492,52 @@
           </div>
         </div>
       </section>
+
+      <!-- Mobile Slider -->
+      <div
+        id="carouselExampleSlidesOnlyMobile"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-50"
+              src="./img/sport4.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-50"
+              src="./img/sport7.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-50"
+              src="./img/sport3.jpg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/sport8.png" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/sport2.png" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/sport5.png" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/sport.jpg" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/sport6.png" alt="Four slide" />
+          </div>
+        </div>
+      </div>
 
       <h1 class="titre">Concerts</h1>
       <section class="pt-5 pb-5">
@@ -532,7 +638,53 @@
         </div>
       </section>
 
-      <h1>Avis</h1>
+      <!-- Mobile Slider -->
+      <div
+        id="carouselExampleSlidesOnlyMobile"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-50"
+              src="./img/concert5.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-50"
+              src="./img/concert8.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-50"
+              src="./img/concert.jpg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/concert6.jpg" alt="Four slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/concert4.jpg" alt="Five slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/concert7.jpg" alt="Six slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/concert2.png" alt="Seven slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./img/concert3.jpg" alt="Eight slide" />
+          </div>
+        </div>
+      </div>
+
+      <h1 class="titre">Avis</h1>
       <div class="card-columns">
         <div class="card" style="background-color: #fff0e3">
           <h4>Mathilde</h4>
@@ -631,5 +783,6 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
     ></script>
     <script type="module" src="./js/home.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
