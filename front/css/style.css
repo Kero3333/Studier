@@ -17,11 +17,6 @@ body{
     overflow-x:hidden;
 }
 
-/* .carousel-inner{
- left: 24rem;
-} */
-
-
 header{
     border-bottom: 1px solid var(--primar-color-orange);
     margin-bottom: 15px;
@@ -35,17 +30,18 @@ header{
     
 }
 .icons{
-    width: 65px;
-    padding: 22px;
+    width: 25px;
+    margin: 30px;
 }
 .containerSearch input{
-    margin: 20px;
+    margin: 30px;
 }
 
 .logo{
-    height: 50px;
+    height: 60px;
     margin: 10px auto 20px;
     display: block;
+    
 }
 .titre{
     padding: 2rem;
@@ -54,76 +50,12 @@ nav{
     border-top: solid 1px var(--primar-color-orange);
 }
 main{
-    color: var(--primar-color-orange);
+    color: #FF7200;
     text-align: center;
 }
 
 footer{
     border-top: solid 1px var(--primar-color-orange);
-}
-/* NavBar Dropdown */
-a {
-  text-decoration: none;
-}
-
-ul {
-  color: var(--primar-color-orange);
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-li {
-  color: var(--primar-color-orange);
-  background: #fff;
-  display: block;
-  float: left;
-  padding: 1rem;
-  position: relative;
-  text-decoration: none;
-  transition-duration: 0.5s;
-}
-  
-
-
-li:hover,
-li:focus-within {
-  /* background: red; */
-  cursor: pointer;
-}
-
-li:focus-within a {
-  outline: none;
-}
-
-ul li ul {
-  color: var(--primar-color-orange);
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-}
-
-li a {
-  color: var(--primar-color-orange);
-}
-
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover,
-ul li ul:focus {
-   visibility: visible;
-   opacity: 1;
-   display: block;
-}
-
-ul li ul li {
-  clear: both;
-  width: 100%;
 }
 
 /* Page Accueil */
@@ -131,13 +63,10 @@ ul li ul li {
   background-color: var(--secondary-color-orange-clair);
   text-align: left;
 }
-#carouselSlidesOnly{
-  width: 200vh;
-  left: 2rem;
-}
 
-.avis{
-  margin-bottom: 5rem;
+.carousel-inner{
+  
+  left: 21.5rem;
 }
 /* Page profil */
 .card{
