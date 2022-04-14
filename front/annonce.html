@@ -10,7 +10,7 @@
     <title>Annonces Stu:Dier</title>
 </head>
 <body>
-    <header>
+  <header>
         <div class="head">
             <div class="containerSearch">
                 <input type="text" class="searchBar" placeholder="Search ...">
@@ -26,44 +26,143 @@
             <a href="./login.html"><img class="icons"  src="./img/user.jpg" alt=""></a>
 
         </div>
-
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a href="./index.html" aria-haspopup="true"><h2>Accueil</h2></a>
-                </li>
-                <li class="nav-item"><a href="./annonce.html" aria-haspopup="true"><h2>Travail</h2></a>
-                    <ul class="dropdown" aria-label="submenu">
-                      <li><a href="#">Job étudiant</a></li>
-                      <li><a href="#">Stage</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="./annonce.html" aria-haspopup="true"><h2>Loisir</h2></a>
-                    <ul class="dropdown" aria-label="submenu">
-                      <li><a href="#">Sport</a></li>
-                      <li><a href="#">Concert</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="./annonce.html" aria-haspopup="true"><h2>Service</h2></a>
-                    <ul class="dropdown" aria-label="submenu">
-                      <li><a href="#">Logement</a></li>
-                      <li><a href="#">Initiative solidaire</a></li>
-                      <li><a href="#">Transport</a></li>
-                      <li><a href="#">Santé</a></li>
-                    </ul>
-                </li>
-              </ul>
-        </nav>
         
+        <!-- Menu Mobile -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a class="linkMobile" href="#">Actualité</a></li>
+          <li><a class="linkMobile" href="#">Annonce</a></li>
+          <li><a class="linkMobile" href="#">Travail</a></li>
+          <li><a class="linkMobile" href="#">Loisir</a></li>
+          <li><a class="linkMobile" href="#">Service</a></li>
+        </ul>
+      </div>
+      <div class="menuMobile">
+        <span class="btnMobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"/></a>
+      </div>
+      
 
-        <!-- <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#home.html"><img src="./img/accueil.png" alt="Home"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/search.png" alt="Search"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
-            <a class="navbar-brand" href="#favoris.html"><img src="./img/heart.png" alt="Heart"></a> 
-            <a class="navbar-brand" href="#user.html"><img src="./img/user.png" alt="User"></a>
-        </nav> -->
+      <!-- Mobile NavBar -->
+      <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html"><img src="./img/home.png" alt="Home"></a>
+            <a class="navbar-brand" href="./annonce.html"><img src="./img/search.jpg" alt="Search"></a>
+            <a class="navbar-brand" href="#search.html"><img id="postIt" src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
+            <a class="navbar-brand" href="./favoris.html"><img src="./img/heart.jpg" alt="Heart"></a> 
+            <a class="navbar-brand" href="./profil.html"><img src="./img/user.jpg" alt="User"></a>
+      </nav>
 
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- Container wrapper -->
+          <nav class="container-fluid">
+            <!-- Toggle button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarCenteredExample"
+              aria-controls="navbarCenteredExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+        
+          <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Actualité</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="./annonce.html" aria-current="page" href="#">Annonces</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Travail
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Job étudiant</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Stage</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+               <!-- Navbar dropdown -->
+               <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Loisir
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Job étudiant</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Stage</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Logement</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Initiative solidaire</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Santé</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Transport</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  </header>
+   
     <main>
       
       <div id="overlay">
@@ -145,8 +244,10 @@
           <a style="color: #FF7200;"  href="https://www.figma.com/file/fRZHc1k33myeKiUqCrSsa1/Stu%3ADier?node-id=27%3A2">STUDIER</a>
         </div>
       </footer>
-    
+      
+      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
       <script type="module" src="./js/annonce.js"></script>
       <script type="text/javascrit" src="./js/publier.js"></script>
+      <script src="./js/menu.js"></script>
 </body>
 </html>
