@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/overlay.css">
     <title>Annonces Stu:Dier</title>
 </head>
 <body>
@@ -18,20 +19,40 @@
             </div>
     
            <a class="logo"href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"></a> 
+
+           <button class="menu_button" onclick="on()">Publier</button>
     
             <a href="./favoris.html"><img class="icons" src="./img/heart.jpg" alt=""></a>
             <a href="./login.html"><img class="icons"  src="./img/user.jpg" alt=""></a>
 
         </div>
         
+        <!-- Menu Mobile -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a class="linkMobile" href="#">Actualité</a></li>
+          <li><a class="linkMobile" href="#">Annonce</a></li>
+          <li><a class="linkMobile" href="#">Travail</a></li>
+          <li><a class="linkMobile" href="#">Loisir</a></li>
+          <li><a class="linkMobile" href="#">Service</a></li>
+        </ul>
+      </div>
+      <div class="menuMobile">
+        <span class="btnMobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"/></a>
+      </div>
+      
 
-        <!-- <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#home.html"><img src="./img/accueil.png" alt="Home"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/search.png" alt="Search"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
-            <a class="navbar-brand" href="#favoris.html"><img src="./img/heart.png" alt="Heart"></a> 
-            <a class="navbar-brand" href="#user.html"><img src="./img/user.png" alt="User"></a>
-        </nav> -->
+      <!-- Mobile NavBar -->
+      <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html"><img src="./img/home.png" alt="Home"></a>
+            <a class="navbar-brand" href="./annonce.html"><img src="./img/search.jpg" alt="Search"></a>
+            <a class="navbar-brand" href="#search.html"><img id="postIt" src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
+            <a class="navbar-brand" href="./favoris.html"><img src="./img/heart.jpg" alt="Heart"></a> 
+            <a class="navbar-brand" href="./profil.html"><img src="./img/user.jpg" alt="User"></a>
+      </nav>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <!-- Container wrapper -->
           <nav class="container-fluid">
@@ -143,9 +164,48 @@
   </header>
    
     <main>
-        <!-- Grid -->
-    <div class="masonry">
+      
+      <div id="overlay">
+        <div class="post_annonce">
 
+          <button type="image" class="close_btn" onclick="off()">
+            <img class="img_close_btn" src="./img/x.png">
+          </button>
+
+          <form action="onSubmit">
+      
+            <input placeholder="Titre" type="text" id="titre_post" class="textOverlay"></input>
+  
+            <textarea placeholder="Ecriver vos information" type="text" id="description_post" class="description_post"></textarea>
+  
+            <input required  placeholder="Sujet" list="type" id="type_post" class="textOverlay">
+            <datalist id="type">
+              <option value="test">
+            </datalist>
+            </input>
+            
+            <input placeholder="préciser..." list="sub_type" id="sub_type_post" class="textOverlay">
+            <datalist id="sub_type">
+              <option value="test2">
+            </datalist>
+            </input>
+
+            <img class="image_upload" ></img>
+
+            <label htmlFor="file_upload" class="publier_btn">
+              Ajouter une image
+            </label>
+            <input id="file_upload" type="file" placeholder="Ajouter une Image" ></input>
+            <input type="submit" value="Publier" placeholder="Publier" class="publier_btn"></input>
+          </form>
+
+        </div>
+    
+      </div>
+
+      <!-- Grid -->
+      <div class="masonry">
+        
     </main>
     <footer class="text-center" >
         <div class="container pt-4">
@@ -187,5 +247,7 @@
       
       <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
       <script type="module" src="./js/annonce.js"></script>
+      <script type="text/javascrit" src="./js/publier.js"></script>
+      <script src="./js/menu.js"></script>
 </body>
 </html>

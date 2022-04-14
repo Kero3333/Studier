@@ -1,0 +1,106 @@
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    box-sizing:border-box;
+    overflow: hidden;
+  }
+
+ .post_annonce {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    left: 35%;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    border-width: 100px;
+    border-color: black;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 25px;
+    /* background-color:rgb(250, 176, 176) */
+}
+
+.description_post {
+
+}
+
+.close_btn {
+    cursor: pointer;
+    background-color:white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+}
+
+.img_close_btn {
+    width: 40px;
+    height: 40px;
+}
+
+.textOverlay{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 3px 3px black;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+.publier_btn{
+    margin: 15px;
+    width: 40%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color:#FF7200;
+    text-align: center;
+    color:black;
+    border-radius:5px;
+}
+
+.post_button{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.image_upload {
+    width: 150px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.menu_button {
+    background-color: #FF7200;
+    margin-top: 10px; 
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.menu_button:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #ffffff;
+    cursor: pointer;
+}
