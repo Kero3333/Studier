@@ -1,15 +1,14 @@
-const router = require("express").Router();
 const axios = require("axios");
 
-router.get("/", async (req, res) => {
-  // on récupère la liste des des annonces qui ont été aimé
+const getPopularAnnounces = async () => {
+  // on récupère la liste des des annonces qui ont été "like"
   const {
     data: { data: announcesLiked },
   } = await axios.get(
     "https://strapi3333.herokuapp.com/api/favoris?populate[announces_ids][fields][0]=id",
     {
       headers: {
-        Authorization: req.headers.authorization,
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
         "Content-Type": "application/json",
       },
     }
@@ -37,9 +36,20 @@ router.get("/", async (req, res) => {
 
   console.log(popularAnnounces);
 
+  const carousel = document.querySelector(".carousel-inner");
+
+  carousel.innerHTML = ``;
+
+  const nbCarousel = ["First", "Second", "Third", "Four"];
+  let itemActive = "active";
+
   // on récupère les images des 4 annonces les plus populaires
   for (let i = 0; i < 4; i++) {
-    const {
+    if (i > 0) {
+      itemActive = "";
+    }
+
+    let {
       data: {
         data: {
           attributes: { picture },
@@ -49,15 +59,28 @@ router.get("/", async (req, res) => {
       `https://strapi3333.herokuapp.com/api/announces/${popularAnnounces[i][0]}`,
       {
         headers: {
-          Authorization: req.headers.authorization,
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
           "Content-Type": "application/json",
         },
       }
     );
+
+    // on redimensionne l'image
+    const urlPicture = picture.split("/upload/");
+    const resizePicture = "w_1000,ar_16:9,c_fill,g_auto,e_sharpen";
+    picture = `${urlPicture[0]}/upload/${resizePicture}/${urlPicture[1]}`;
+
+    carousel.innerHTML += `
+          <div class="carousel-item ${itemActive}">
+              <img
+              class="d-block w-50"
+              src="${picture}"
+              alt="${nbCarousel[i]} slide"
+              />
+          </div>
+      `;
     console.log(picture);
   }
+};
 
-  res.send("ok");
-});
-
-module.exports = router;
+getPopularAnnounces();
