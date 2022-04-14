@@ -71,16 +71,28 @@ const getPopularAnnounces = async () => {
       const resizePicture = "w_1000,ar_16:9,c_fill,g_auto,e_sharpen";
       picture = `${urlPicture[0]}/upload/${resizePicture}/${urlPicture[1]}`;
 
-      carousel.innerHTML += `
-          <div class="carousel-item ${itemActive}">
-              <h3>${title}</h3>
-              <img
-              class="d-block w-50"
-              src="${picture}"
-              alt="${nbCarousel[i]} slide"
-              />
-          </div>
+      const div = document.createElement("div");
+      div.id = popularAnnounces[i][0];
+      div.className = `carousel-item ${itemActive}`;
+
+      div.innerHTML = `
+        <h3>${title}</h3>
+        <img
+        class="d-block w-50"
+        src="${picture}"
+        alt="${nbCarousel[i]} slide"
+        />
       `;
+
+      const disp = document.querySelector(".carousel-inner");
+
+      div.addEventListener("click", () => {
+        localStorage.setItem("announce", popularAnnounces[i][0]);
+        document.location.href = "description.html";
+      });
+
+      disp.appendChild(div);
+
       console.log(picture);
     }
   } catch (err) {
