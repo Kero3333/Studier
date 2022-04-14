@@ -43,3 +43,11 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6M
 GET https://strapi3333.herokuapp.com/api/jobs?filters[$or][0][${element}][$eq]=${req.body[element]}&filters
 
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
+
+###
+GET https://strapi3333.herokuapp.com/api/users
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
+
+###
+GET https://strapi3333.herokuapp.com/api/users/41
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY0OTY2NzczNywiZXhwIjoxNjUyMjU5NzM3fQ.IJwjUgj0Y4rvupQC8I14jmJ_qUGcePkTVOUE7GZumhQ
