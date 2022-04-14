@@ -174,19 +174,19 @@
 
           <form action="onSubmit">
       
-            <input placeholder="Titre" type="text" id="titre_post" class="textOverlay"></input>
+            <input name="titre" placeholder="Titre" type="text" id="titre_post" class="textOverlay"></input>
   
-            <textarea placeholder="Ecriver vos information" type="text" id="description_post" class="description_post"></textarea>
+            <textarea name="description" placeholder="Ecriver vos information" type="text" id="description_post" class="description_post"></textarea>
   
-            <input required  placeholder="Sujet" list="type" id="type_post" class="textOverlay">
+            <input name="type" required  placeholder="Sujet" list="type" id="type_post" class="textOverlay">
             <datalist id="type">
-              <option value="test">
+              
             </datalist>
             </input>
             
-            <input placeholder="préciser..." list="sub_type" id="sub_type_post" class="textOverlay">
+            <input name="sub_type" required placeholder="préciser..." list="sub_type" id="sub_type_post" class="textOverlay">
             <datalist id="sub_type">
-              <option value="test2">
+
             </datalist>
             </input>
 
@@ -195,7 +195,7 @@
             <label htmlFor="file_upload" class="publier_btn">
               Ajouter une image
             </label>
-            <input id="file_upload" type="file" placeholder="Ajouter une Image" ></input>
+            <input name="img" id="file_upload" type="file" placeholder="Ajouter une Image" ></input>
             <input type="submit" value="Publier" placeholder="Publier" class="publier_btn"></input>
           </form>
 
@@ -247,7 +247,8 @@
       
       <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
       <script type="module" src="./js/annonce.js"></script>
-      <script type="text/javascrit" src="./js/publier.js"></script>
+      <script type="module" src="./js/publier.js"></script>
+      <script type="text/javascript" src="./js/overlay.js"></script>
       <script src="./js/menu.js"></script>
 </body>
 </html>
