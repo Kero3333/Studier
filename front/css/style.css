@@ -115,6 +115,11 @@ footer {
   -webkit-box-sizing: border-box;
   box-shadow: 2px 2px 4px 0 #ccc; */
 }
+
+.item:hover {
+  cursor: pointer;
+}
+
 .item img {
   max-width: 100%;
 }
