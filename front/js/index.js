@@ -101,5 +101,3 @@ const getPopularAnnounces = async () => {
 };
 
 getPopularAnnounces();
-
-

@@ -44,7 +44,11 @@ header {
 .titre {
   padding: 2rem;
 }
-.sidenav, .btnMobile, #navBar, #carouselExampleSlidesOnlyMobile, .menuMobile{
+.sidenav,
+.btnMobile,
+#navBar,
+#carouselExampleSlidesOnlyMobile,
+.menuMobile {
   display: none;
 }
 nav {
@@ -254,12 +258,14 @@ img {
 }
 .btnDetail,
 .btnDetail:hover {
-  background-color: #7b61ff;
+  background-color: #ff7200;
   border: none;
   padding: auto;
-  width: 50vh;
+  width: 15vh;
   height: 10vh;
   margin-top: 45px;
+  cursor: pointer;
+  font-size: xx-large;
 }
 .linkDetail {
   color: #f0f0f0;
@@ -295,26 +301,32 @@ img {
 
 /* Responsive */
 /* Page d'accueil */
-@media screen and (max-width: 1100px)
-{
-  header{
+@media screen and (max-width: 1100px) {
+  header {
     border: none;
   }
-  .navbar, .head, .navbar-toggler, .container{
+  .navbar,
+  .head,
+  .navbar-toggler,
+  .container {
     display: none;
   }
-  #navBar, #carouselExampleSlidesOnlyMobile, .sidenav, .menuMobile, .btnMobile{
+  #navBar,
+  #carouselExampleSlidesOnlyMobile,
+  .sidenav,
+  .menuMobile,
+  .btnMobile {
     display: flex;
   }
-  #navBar img{
+  #navBar img {
     height: 20px;
   }
-  .btnMobile{
+  .btnMobile {
     color: var(--primar-color-orange);
   }
-  .btnMobile{
+  .btnMobile {
     width: 10px;
-    margin-top: .8em;
+    margin-top: 0.8em;
   }
   .sidenav {
     height: 100%;
@@ -328,7 +340,7 @@ img {
     transition: 0.5s;
     padding-top: 60px;
   }
-  
+
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -338,7 +350,7 @@ img {
     transition: 0.3s;
     font-size: 18px;
   }
-  
+
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -346,19 +358,22 @@ img {
     font-size: 36px;
     margin-left: 50px;
   }
-  
-  .titre, .product-title, h6{
+
+  .titre,
+  .product-title,
+  h6 {
     font-size: 1.5em;
   }
-  .card h4, h5{
-    font-size: .95em;
+  .card h4,
+  h5 {
+    font-size: 0.95em;
   }
-  .card-body p, .product-detail p{
-    font-size: .85em;
+  .card-body p,
+  .product-detail p {
+    font-size: 0.85em;
   }
-  
-  footer{
+
+  footer {
     border: none;
   }
-    
 }
