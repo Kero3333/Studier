@@ -1,19 +1,68 @@
-const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
-let imgId = 1;
+// const imgs = document.querySelectorAll(".img-select a");
+// const imgBtns = [...imgs];
+// let imgId = 1;
 
-imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-        event.preventDefault();
-        imgId = imgItem.dataset.id;
-        slideImage();
-    });
-});
+// imgBtns.forEach((imgItem) => {
+//   imgItem.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     imgId = imgItem.dataset.id;
+//     slideImage();
+//   });
+// });
 
-function slideImage(){
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+// function slideImage() {
+//   const displayWidth = document.querySelector(
+//     ".img-showcase img:first-child"
+//   ).clientWidth;
 
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-}
+//   document.querySelector(".img-showcase").style.transform = `translateX(${
+//     -(imgId - 1) * displayWidth
+//   }px)`;
+// }
 
-window.addEventListener('resize', slideImage);
+// window.addEventListener("resize", slideImage);
+
+const axios = require("axios");
+
+const getAnnounce = async () => {
+  let {
+    data: {
+      data: {
+        attributes: { title, description, picture },
+      },
+    },
+  } = await axios.get(
+    `https://strapi3333.herokuapp.com/api/announces/${localStorage.getItem(
+      "announce"
+    )}`,
+    {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+        "Content-Type": "application/json",
+      },
+    }
+  );
+
+  const displayImage = document.querySelector(".product-imgs");
+  displayImage.innerHTML = `
+    <div class="img-select">
+        <div class="img-item">
+            <img src="${picture}" alt="picture" />
+        </div>
+    </div>
+  `;
+
+  const displayProduct = document.querySelector(".product-content");
+  displayProduct.innerHTML = `
+    <h4 class="product-title">${title}</h4>
+
+    <div class="product-detail">
+        <h6>Description</h6>
+        <p>${description}</p>
+    </div>
+    <div class="text-center">
+    </div>
+  `;
+};
+
+getAnnounce();
