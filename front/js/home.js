@@ -49,7 +49,7 @@ const getPopularAnnounces = async () => {
       itemActive = "";
     }
 
-    const {
+    let {
       data: {
         data: {
           attributes: { picture },
@@ -65,10 +65,15 @@ const getPopularAnnounces = async () => {
       }
     );
 
+    // on redimensionne l'image
+    const urlPicture = picture.split("/upload/");
+    const resizePicture = "w_1000,ar_16:9,c_fill,g_auto,e_sharpen";
+    picture = `${urlPicture[0]}/upload/${resizePicture}/${urlPicture[1]}`;
+
     carousel.innerHTML += `
           <div class="carousel-item ${itemActive}">
               <img
-              class="d-block w-25 h-25"
+              class="d-block w-50"
               src="${picture}"
               alt="${nbCarousel[i]} slide"
               />
