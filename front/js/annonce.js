@@ -1,6 +1,55 @@
 const axios = require("axios");
 
-async function element() {
+const updateNbLike = async () => {
+  // on récupère la liste des des annonces qui ont été "like"
+  const {
+    data: { data: announcesLiked },
+  } = await axios.get(
+    "https://strapi3333.herokuapp.com/api/favoris?populate[announces_ids][fields][0]=id",
+    {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+        "Content-Type": "application/json",
+      },
+    }
+  );
+
+  // on compte le nombre de "like" qu'a reçue chaque annonce
+  const countOfLikeByAnnounce = {};
+
+  announcesLiked.forEach((user) => {
+    user.attributes.announces_ids.data.forEach((announce) => {
+      if (countOfLikeByAnnounce[announce.id] === undefined) {
+        countOfLikeByAnnounce[announce.id] = 1;
+      } else {
+        countOfLikeByAnnounce[announce.id] += 1;
+      }
+    });
+  });
+
+  const announces = Object.keys(countOfLikeByAnnounce);
+
+  // on met à jour le nombre de "like" dans la BDD
+  announces.forEach(async (announce) => {
+    await axios.put(
+      `https://strapi3333.herokuapp.com/api/announces/${announce}`,
+      {
+        data: {
+          number_of_like: countOfLikeByAnnounce[announce],
+        },
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+  });
+};
+
+const getAnnounces = async () => {
+  // on affiche les annonces
   const { data } = await axios.get(
     `https://strapi3333.herokuapp.com/api/announces?populate=*`
   );
@@ -23,6 +72,7 @@ async function element() {
             <div class="flex-column">
                 <h4> ${element.attributes.title}</h4>
                 <p> ${element.attributes.description}</p>
+                <p> ${element.attributes.number_of_like} :D</p>
             </div>
         </div>
     `;
@@ -34,6 +84,7 @@ async function element() {
 
     masonry.appendChild(div);
   });
-}
+};
 
-element();
+updateNbLike();
+getAnnounces();

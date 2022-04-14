@@ -28,7 +28,7 @@ const getAnnounce = async () => {
   let {
     data: {
       data: {
-        attributes: { title, description, picture },
+        attributes: { title, description, picture, number_of_like },
       },
     },
   } = await axios.get(
@@ -59,8 +59,16 @@ const getAnnounce = async () => {
     <div class="product-detail">
         <h6>Description</h6>
         <p>${description}</p>
+        
     </div>
     <div class="text-center">
+        <button class="btnDetail btn-secondary btn-lg">
+            <a
+            class="linkDetail"
+            href=""
+            target="_blank"
+            >${number_of_like} :D</a>
+        </button>
     </div>
   `;
 };
