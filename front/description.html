@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Description Annonce Stu:Dier</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="head">
-            <div class="containerSearch">
-                <input type="text" class="searchBar" placeholder="Search ...">
-                <div class="searchResult">
-                </div>
-            </div>
-    
-           <a class="logo"href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"></a> 
-    
-            <a href="./favoris.html"><img class="icons" src="./img/heart.jpg" alt=""></a>
-            <a href="./login.html"><img class="icons"  src="./img/user.jpg" alt=""></a>
-
+      <div class="head">
+        <div class="containerSearch">
+          <input type="text" class="searchBar" placeholder="Search ..." />
+          <div class="searchResult"></div>
         </div>
-        
 
-        <!-- <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
+        <a class="logo" href="./index.html"
+          ><img class="logo" src="./img/logo.jpg" alt="logo"
+        /></a>
+
+        <a href="./favoris.html"
+          ><img class="icons" src="./img/heart.jpg" alt=""
+        /></a>
+        <a href="./login.html"
+          ><img class="icons" src="./img/user.jpg" alt=""
+        /></a>
+      </div>
+
+      <!-- <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
             <a class="navbar-brand" href="#home.html"><img src="./img/accueil.png" alt="Home"></a>
             <a class="navbar-brand" href="#search.html"><img src="./img/search.png" alt="Search"></a>
             <a class="navbar-brand" href="#search.html"><img src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
@@ -33,127 +41,135 @@
             <a class="navbar-brand" href="#user.html"><img src="./img/user.png" alt="User"></a>
         </nav> -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Container wrapper -->
-            <div class="container-fluid">
-              <!-- Toggle button -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarCenteredExample"
-                aria-controls="navbarCenteredExample"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
-          
-              <!-- Collapsible wrapper -->
-              <div
-                class="collapse navbar-collapse justify-content-center"
-                id="navbarCenteredExample"
-              >
-                <!-- Left links -->
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Actualité</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCenteredExample"
+          >
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Actualité</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./annonce.html"
+                  aria-current="page"
+                  href="#"
+                  >Annonces</a
+                >
+              </li>
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Travail
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Job étudiant</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="./annonce.html" aria-current="page" href="#">Annonces</a>
+                  <li>
+                    <a class="dropdown-item" href="#">Stage</a>
                   </li>
-                  <!-- Navbar dropdown -->
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-mdb-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Travail
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="#">Job étudiant</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Stage</a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <!-- Navbar dropdown -->
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-mdb-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Loisir
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="#">Job étudiant</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Stage</a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <!-- Navbar dropdown -->
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-mdb-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Service
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="#">Logement</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Initiative solidaire</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Santé</a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Transport</a>
-                      </li>
-                    </ul>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
-                <!-- Left links -->
-              </div>
-              <!-- Collapsible wrapper -->
-            </div>
-            <!-- Container wrapper -->
-          </nav>
+              </li>
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Loisir
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Job étudiant</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Stage</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Logement</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Initiative solidaire</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Santé</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Transport</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
     </header>
 
     <main>
-        <!-- <div class="card">
+      <!-- <div class="card">
             <img class="img-fluid" src="./img/description.jpg" alt="Responsive image">
             <div class="card-img-overlay">
               <h1 class="card-title">Appartement 16m²</h1>
@@ -161,105 +177,121 @@
             </div>
           </div> -->
 
-          <div class = "cardWrapper">
-            <div class = "cardDetail">
-              <!-- card left -->
-              <div class = "product-imgs">
-                <div class = "img-display">
-                  <div class = "img-showcase">
-                    <img src = "./img/description.jpg" alt = "room img">
-                    <img src = "./img/bedroom.jpg" alt = "room img">
-                    <img src = "./img/kitchen.jpg" alt = "room img">
-                    <img src = "./img/bathroom.jpg" alt = "room img">
-                  </div>
-                </div>
-                <div class = "img-select">
-                  <div class = "img-item">
-                    <a href = "#" data-id = "1">
-                      <img src = "./img/description.jpg" alt = "room img">
-                    </a>
-                  </div>
-                  <div class = "img-item">
-                    <a href = "#" data-id = "2">
-                      <img src = "./img/bedroom.jpg" alt = "room img">
-                    </a>
-                  </div>
-                  <div class = "img-item">
-                    <a href = "#" data-id = "3">
-                      <img src = "./img/kitchen.jpg" alt = "room img">
-                    </a>
-                  </div>
-                  <div class = "img-item">
-                    <a href = "#" data-id = "4">
-                      <img src = "./img/bathroom.jpg" alt = "room img">
-                    </a>
-                  </div>
-                </div>
+      <div class="cardWrapper">
+        <div class="cardDetail">
+          <!-- card left -->
+          <div class="product-imgs">
+            <div class="img-display">
+              <div class="img-showcase">
+                <img src="./img/description.jpg" alt="room img" />
+                <img src="./img/bedroom.jpg" alt="room img" />
+                <img src="./img/kitchen.jpg" alt="room img" />
+                <img src="./img/bathroom.jpg" alt="room img" />
               </div>
-              <!-- card Text -->
-              <div class = "product-content">
-                <h4 class = "product-title">Appartement 16m²</h4>
-                <h5>380€ Charges comprises</h5>
-          
-          
-                <div class = "product-detail">
-                  <h6>Description </h6>
-                  <p>À louer à Saint-Malo, une large sélection d’appartements et de maisons entièrement rénovés et équipés du T2 à la maison familiale. L’agence Cocoonr* vous propose différents types de baux (bail mobilité, bail civil, bail classique) adaptés à votre séjour de moyenne et/ou longue durée à Saint-Malo (1 mois minimum).  Facilité garantie jusqu’au bout : tous les logements proposés par Cocoonr disposent de tout le confort. Vous n’avez rien à faire : aucun déménagement, pas de formalités administratives…
-                  </p>
-                </div>
-                <div class="text-center">
-                    <button class="btnDetail btn-secondary btn-lg"> <a class="linkDetail" href="https://www.leboncoin.fr/locations/2145818177.htm" target="_blank">Le Bon Coin</a></button>
-
-                </div>
+            </div>
+            <div class="img-select">
+              <div class="img-item">
+                <a href="#" data-id="1">
+                  <img src="./img/description.jpg" alt="room img" />
+                </a>
+              </div>
+              <div class="img-item">
+                <a href="#" data-id="2">
+                  <img src="./img/bedroom.jpg" alt="room img" />
+                </a>
+              </div>
+              <div class="img-item">
+                <a href="#" data-id="3">
+                  <img src="./img/kitchen.jpg" alt="room img" />
+                </a>
+              </div>
+              <div class="img-item">
+                <a href="#" data-id="4">
+                  <img src="./img/bathroom.jpg" alt="room img" />
+                </a>
               </div>
             </div>
           </div>
-          
-          
-        
+          <!-- card Text -->
+          <div class="product-content">
+            <h4 class="product-title">Appartement 16m²</h4>
+            <h5>380€ Charges comprises</h5>
 
+            <div class="product-detail">
+              <h6>Description</h6>
+              <p>
+                À louer à Saint-Malo, une large sélection d’appartements et de
+                maisons entièrement rénovés et équipés du T2 à la maison
+                familiale. L’agence Cocoonr* vous propose différents types de
+                baux (bail mobilité, bail civil, bail classique) adaptés à votre
+                séjour de moyenne et/ou longue durée à Saint-Malo (1 mois
+                minimum). Facilité garantie jusqu’au bout : tous les logements
+                proposés par Cocoonr disposent de tout le confort. Vous n’avez
+                rien à faire : aucun déménagement, pas de formalités
+                administratives…
+              </p>
+            </div>
+            <div class="text-center">
+              <button class="btnDetail btn-secondary btn-lg">
+                <a
+                  class="linkDetail"
+                  href="https://www.leboncoin.fr/locations/2145818177.htm"
+                  target="_blank"
+                  >Le Bon Coin</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer class="text-center" >
-        <div class="container pt-4">
-          <section class="mb-4">
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><img src="./img/facebook.png" alt=""></a>
-      
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><img src="./img/twitter-sign.png" alt=""></a>
-      
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><img src="./img/instagram.png" alt=""></a>
-      
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><img src="./img/tiktok.png" alt=""></a>
-          </section>
-        </div>
-        <div class="text-center p-3" style="color: #FF7200;" >
-          © 2022 Copyright
-          <a style="color: #FF7200;"  href="https://www.figma.com/file/fRZHc1k33myeKiUqCrSsa1/Stu%3ADier?node-id=27%3A2">STUDIER</a>
-        </div>
-      </footer>
+    <footer class="text-center">
+      <div class="container pt-4">
+        <section class="mb-4">
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img src="./img/facebook.png" alt=""
+          /></a>
 
-      <script src="../front/js/description.js"></script>
-    
-    
-</body>
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img src="./img/twitter-sign.png" alt=""
+          /></a>
+
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img src="./img/instagram.png" alt=""
+          /></a>
+
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img src="./img/tiktok.png" alt=""
+          /></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="color: #ff7200">
+        © 2022 Copyright
+        <a
+          style="color: #ff7200"
+          href="https://www.figma.com/file/fRZHc1k33myeKiUqCrSsa1/Stu%3ADier?node-id=27%3A2"
+          >STUDIER</a
+        >
+      </div>
+    </footer>
+
+    <script type="module" src="./js/description.js"></script>
+  </body>
 </html>
