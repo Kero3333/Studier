@@ -24,14 +24,31 @@
 
         </div>
         
+        <!-- Menu Mobile -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a class="linkMobile" href="#">Actualité</a></li>
+          <li><a class="linkMobile" href="#">Travail</a></li>
+          <li><a class="linkMobile" href="#">Loisir</a></li>
+          <li><a class="linkMobile" href="#">Service</a></li>
+        </ul>
+      </div>
+      <div class="menuMobile">
+        <span class="btnMobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"/></a>
+      </div>
+      
 
-        <!-- <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#home.html"><img src="./img/accueil.png" alt="Home"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/search.png" alt="Search"></a>
-            <a class="navbar-brand" href="#search.html"><img src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
-            <a class="navbar-brand" href="#favoris.html"><img src="./img/heart.png" alt="Heart"></a> 
-            <a class="navbar-brand" href="#user.html"><img src="./img/user.png" alt="User"></a>
-        </nav> -->
+      <!-- Mobile NavBar -->
+      <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html"><img src="./img/home.png" alt="Home"></a>
+            <a class="navbar-brand" href="./annonce.html"><img src="./img/search.jpg" alt="Search"></a>
+            <a class="navbar-brand" href="#search.html"><img id="postIt" src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
+            <a class="navbar-brand" href="./favoris.html"><img src="./img/heart.jpg" alt="Heart"></a> 
+            <a class="navbar-brand" href="./profil.html"><img src="./img/user.jpg" alt="User"></a>
+        </nav>
+
     </header>
     <main>
         
@@ -75,6 +92,7 @@
         </div>
       </footer>
       <script type="module" src="./js/profil.js"></script>
+      <script src="./js/menu.js"></script>
     
 </body>
 </html>
