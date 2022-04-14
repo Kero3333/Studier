@@ -1,92 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mali&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mali', Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mali", Arial, Helvetica, sans-serif;
 }
 
 :root {
-    --primar-color-orange : #FF7200;
-    --secondary-color-orange-clair: #FFF0E3;
-    --color-black : #000;
+  --primar-color-orange: #ff7200;
+  --secondary-color-orange-clair: #fff0e3;
+  --color-black: #000;
 }
 
-body{
-    overflow-x:hidden;
+body {
+  overflow-x: hidden;
 }
 
-header{
-    border-bottom: 1px solid var(--primar-color-orange);
-    margin-bottom: 15px;
+header {
+  border-bottom: 1px solid var(--primar-color-orange);
+  margin-bottom: 15px;
 }
 
-.head{
-    display: flex;
-    align-content: space-around;
-    justify-content: center;
-    margin-bottom: 6rem;
-    
+.head {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  margin-bottom: 6rem;
 }
-.icons{
-    width: 25px;
-    margin: 30px;
+.icons {
+  width: 25px;
+  margin: 30px;
 }
-.containerSearch input{
-    margin: 30px;
-}
-
-.logo{
-    height: 60px;
-    margin: 10px auto 20px;
-    display: block;
-    
-}
-.titre{
-    padding: 2rem;
-}
-nav{
-    border-top: solid 1px var(--primar-color-orange);
-}
-main{
-    color: #FF7200;
-    text-align: center;
+.containerSearch input {
+  margin: 30px;
 }
 
-footer{
-    border-top: solid 1px var(--primar-color-orange);
+.logo {
+  height: 60px;
+  margin: 10px auto 20px;
+  display: block;
+}
+.titre {
+  padding: 2rem;
+}
+nav {
+  border-top: solid 1px var(--primar-color-orange);
+}
+main {
+  color: #ff7200;
+  text-align: center;
+}
+
+footer {
+  border-top: solid 1px var(--primar-color-orange);
 }
 
 /* Page Accueil */
-.card-body{
+.card-body {
   background-color: var(--secondary-color-orange-clair);
   text-align: left;
 }
 
-.carousel-inner{
-  
+/* .carousel-inner {
   left: 21.5rem;
+} */
+
+.carousel-item img {
+  display: block;
+  margin: auto;
 }
 /* Page profil */
-.card{
-    background-color: var(--secondary-color-orange-clair);
+.card {
+  background-color: var(--secondary-color-orange-clair);
 }
-.card-img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+.card-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 .card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
+  display: flex;
+  flex: 1 1 auto;
 }
 
 /* Page Annonce */
 /* Masonry container */
-.masonry { 
+.masonry {
   -webkit-column-count: 4;
-  -moz-column-count:4;
+  -moz-column-count: 4;
   column-count: 4;
   -webkit-column-gap: 1em;
   -moz-column-gap: 1em;
@@ -112,7 +114,9 @@ footer{
   -webkit-box-sizing: border-box;
   box-shadow: 2px 2px 4px 0 #ccc; */
 }
-.item img{max-width:100%;}
+.item img {
+  max-width: 100%;
+}
 
 .img-details {
   position: relative;
@@ -121,10 +125,10 @@ footer{
 .favorite-item {
   height: 40px;
   width: 40px;
-  position:absolute;
+  position: absolute;
   margin: 12px;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   color: var(--primar-color-orange);
 }
 .logo-profil {
@@ -133,10 +137,10 @@ footer{
   border-radius: 100%;
 }
 
-.flex-card{
+.flex-card {
   display: flex;
   margin: 25px;
-  gap:15px;
+  gap: 15px;
 }
 
 .flex-card p {
@@ -145,41 +149,39 @@ footer{
 
 .flex-column {
   flex-direction: column;
-  text-align:left;
+  text-align: left;
 }
 
 .flex-column h4 {
   font-weight: bold;
 }
 
-
-
 @media only screen and (max-width: 400px) {
   .masonry {
-      -moz-column-count: 1;
-      -webkit-column-count: 1;
-      column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 768px){
+@media only screen and (min-width: 401px) and (max-width: 768px) {
   .masonry {
-      -moz-column-count: 2;
-      -webkit-column-count: 2;
-      column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1200px){
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
   .masonry {
-      -moz-column-count: 3;
-      -webkit-column-count: 3;
-      column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
   }
 }
 @media only screen and (min-width: 1201px) {
   .masonry {
-      -moz-column-count: 4;
-      -webkit-column-count: 4;
-      column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
   }
 }
