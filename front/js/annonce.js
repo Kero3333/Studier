@@ -1,5 +1,6 @@
 const axios = require("axios");
 
+
 const updateNbLike = async () => {
   // on récupère la liste des des annonces qui ont été "like"
   const {
@@ -85,6 +86,7 @@ const getAnnounces = async () => {
     masonry.appendChild(div);
   });
 };
+
 
 updateNbLike();
 getAnnounces();

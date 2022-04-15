@@ -24,9 +24,9 @@ const getcommentaire = async () => {
       </div>
     </div>
       `;
-    })
+    });
 
-}    
+};   
 
 
-getcommentaire()
+getcommentaire();
