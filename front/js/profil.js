@@ -27,13 +27,12 @@ async function profile() {
 
   const modifyButton = document.getElementById("modifyButton");
   modifyButton.addEventListener("click", (event) => {
-    console.log("hello");
     Array.from(document.querySelectorAll(".profilInput")).forEach((input) => {
       input.readOnly = false;
     });
 
-    document.querySelector("button").textContent = "Save";
-    document.querySelector("button").id = "saveButton";
+    document.querySelector("#modifyButton").textContent = "Save";
+    document.querySelector("#modifyButton").id = "saveButton";
     document
       .getElementById("saveButton")
       .addEventListener("click", async (e) => {
