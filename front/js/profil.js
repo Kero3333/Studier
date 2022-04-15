@@ -23,7 +23,6 @@ async function profile() {
 <button id="modifyButton">Modifier</button>
 
 `;
-  //return data.id;
   const id = data.id;
 
   const modifyButton = document.getElementById("modifyButton");
@@ -35,7 +34,6 @@ async function profile() {
 
     document.querySelector("button").textContent = "Save";
     document.querySelector("button").id = "saveButton";
-    // saveButton
     document
       .getElementById("saveButton")
       .addEventListener("click", async (e) => {
@@ -55,50 +53,11 @@ async function profile() {
             },
           }
         );
-        //localStorage.setItem('token', data);
-
-        //window.location = '/profil.html';
       });
   });
 }
 
-//const id = profile();
-
 profile();
-
-/*async function modifyProfile (id){
-    const modifyButton = document.getElementById('modifyButton');
-    modifyButton.addEventListener('click', event => {
-        console.log('hello')
-        Array.from(document.querySelectorAll('.profilInput')).forEach(input => {
-    
-            input.readOnly = false;
-        });
-    
-        document.querySelector('button').textContent = 'Save';
-        document.querySelector('button').id = 'saveButton';
-        // saveButton
-        document.getElementById('saveButton').addEventListener('click', async e => {
-            const inputs = Array.from(document.querySelectorAll('.profilInput'));
-    
-            const body = {};
-            inputs.forEach(input => {
-                body[input.name] = input.value;
-            });
-            console.log(body)
-            const { data } = await axios.put(`https://strapi3333.herokuapp.com/api/users/${id}`, {data: body}, {
-                headers: { Authorization: 'Bearer ' + localStorage.getItem('token') }
-            });
-            localStorage.setItem('token', data);
-    
-            window.location = '/profile.html';
-        });
-    });
-
-
-}
-
-modifyProfile(id);*/
 
 const getUser = async () => {
   try {
