@@ -24,6 +24,8 @@
 
 const axios = require("axios");
 
+require("./commentaire");
+
 const getAnnounce = async () => {
   let {
     data: {
