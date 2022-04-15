@@ -1,15 +1,18 @@
-const axios = require('axios');
+const axios = require("axios");
 
-async function profile (){
-    const {data} = await axios.get(`https://strapi3333.herokuapp.com/api/users/me`, {
-        headers: { Authorization: 'Bearer ' + localStorage.getItem('token') }
-    });
+async function profile() {
+  const { data } = await axios.get(
+    `https://strapi3333.herokuapp.com/api/users/me`,
+    {
+      headers: { Authorization: "Bearer " + localStorage.getItem("token") },
+    }
+  );
 
-    const main = document.querySelector('main');
-    
-    console.log(data)
+  const main = document.querySelector("main");
 
-     main.innerHTML += `
+  console.log(data);
+
+  main.innerHTML += `
      <div class="card">
      <div class="card-horizontal">
          <div class="img-square-wrapper">
@@ -23,8 +26,34 @@ async function profile (){
  </div>
 
 `;
-console.log(element.attributes);
+  console.log(element.attributes);
+}
 
+const getUser = async () => {
+  try {
+    const { data } = await axios.get(
+      "https://strapi3333.herokuapp.com/api/users/me",
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log(data);
+    const logProfil = document.querySelector("#logProfil");
+    logProfil.href = "profil.html";
+
+    logProfil.innerHTML = `
+      <img class="logo-profil" src="${data.picture_profile}" alt="picture">
+      `;
+  } catch (err) {
+    console.log(err.message);
+  }
+};
+
+if (localStorage.getItem("token")) {
+  getUser();
 }
 
 profile();
