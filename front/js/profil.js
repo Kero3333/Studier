@@ -31,7 +31,7 @@ async function profile() {
       input.readOnly = false;
     });
 
-    document.querySelector("#modifyButton").textContent = "Save";
+    document.querySelector("#modifyButton").textContent = "Enregistrer";
     document.querySelector("#modifyButton").id = "saveButton";
     document
       .getElementById("saveButton")
