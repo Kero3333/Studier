@@ -1,30 +1,4 @@
-// const imgs = document.querySelectorAll(".img-select a");
-// const imgBtns = [...imgs];
-// let imgId = 1;
-
-// imgBtns.forEach((imgItem) => {
-//   imgItem.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     imgId = imgItem.dataset.id;
-//     slideImage();
-//   });
-// });
-
-// function slideImage() {
-//   const displayWidth = document.querySelector(
-//     ".img-showcase img:first-child"
-//   ).clientWidth;
-
-//   document.querySelector(".img-showcase").style.transform = `translateX(${
-//     -(imgId - 1) * displayWidth
-//   }px)`;
-// }
-
-// window.addEventListener("resize", slideImage);
-
 const axios = require("axios");
-
-// require("./commentaire");
 
 const getAnnounce = async () => {
   let {
@@ -86,7 +60,6 @@ const getUser = async () => {
         },
       }
     );
-    console.log(data);
     const logProfil = document.querySelector("#logProfil");
     logProfil.href = "profil.html";
 
@@ -98,8 +71,35 @@ const getUser = async () => {
   }
 };
 
+const getcommentaire = async () => {
+  // on affiche les commentaire
+  const { data } = await axios.get(
+    `https://strapi3333.herokuapp.com/api/comentaires?populate=users_permissions_user&filters[announce][id][$eq]=${localStorage.getItem(
+      "announce"
+    )}`
+  );
+
+  const results = data.data;
+
+  const div = document.querySelector(".card-columns");
+
+  results.forEach((element) => {
+    div.innerHTML += `
+      <div class="card" style="background-color: #fff0e3">
+      <h4>${element.attributes.users_permissions_user.data.attributes.username}</h4>
+      <div class="card-body">
+        <p class="card-text" style="color: #000">
+        ${element.attributes.opinion}
+        </p>
+      </div>
+    </div>
+      `;
+  });
+};
+
 if (localStorage.getItem("token")) {
   getUser();
 }
 
 getAnnounce();
+getcommentaire();
