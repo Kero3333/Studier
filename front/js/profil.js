@@ -1,4 +1,4 @@
-const axios = require('axios');
+const axios = require("axios");
 
 async function profile (){
     const {data} = await axios.get(`https://strapi3333.herokuapp.com/api/users/me`, {

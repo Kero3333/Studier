@@ -28,13 +28,41 @@
         <a href="./favoris.html"
           ><img class="icons" src="./img/heart.jpg" alt=""
         /></a>
-        <a href="./login.html"
-          ><img class="icons" src="./img/user.jpg" alt=""
-        /></a>
+        <a id="logProfil" href="./login.html"><img class="icons"  src="./img/user.jpg" alt=""></a>
+
       </div>
+
+      <!-- Menu Mobile -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a class="linkMobile" href="#">Actualité</a></li>
+          <li><a class="linkMobile" href="#">Annonce</a></li>
+          <li><a class="linkMobile" href="#">Emploi</a></li>
+          <li><a class="linkMobile" href="#">Loisir</a></li>
+          <li><a class="linkMobile" href="#">Service</a></li>
+        </ul>
+      </div>
+      <div class="menuMobile">
+        <span class="btnMobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="logo"/></a>
+      </div>
+      
+
+      <!-- Mobile NavBar -->
+      <nav id="navBar" class="navbar fixed-bottom navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html"><img src="./img/home.png" alt="Home"></a>
+            <a class="navbar-brand" href="./annonce.html"><img src="./img/search.jpg" alt="Search"></a>
+            <a class="navbar-brand" href="#search.html"><img id="postIt" src="./img/post-it.jpg" alt="Post-it" width="30px"></a>
+            <a class="navbar-brand" href="./favoris.html"><img src="./img/heart.jpg" alt="Heart"></a> 
+            <a class="navbar-brand" href="./profil.html"><img src="./img/user.jpg" alt="User"></a>
+        </nav>
     </header>
     <main>
       <h1>Vos Favoris</h1>
+
+      <div class="masonry">
+        
     </main>
     <footer class="text-center">
       <div class="container pt-4">
@@ -81,5 +109,7 @@
         >
       </div>
     </footer>
+    <script type="module" src="./js/favori.js"></script>
+    <script src="../front/js/menu.js"></script>
   </body>
 </html>
