@@ -325,11 +325,12 @@ img {
   background-color: #ff7200;
   border: none;
   padding: auto;
-  width: 15vh;
+  width: 10rem;
   height: 10vh;
   margin-top: 45px;
   cursor: pointer;
   font-size: xx-large;
+  border-radius: 35px;
 }
 .linkDetail {
   color: #f0f0f0;

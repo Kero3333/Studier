@@ -31,7 +31,7 @@ async function profile (){
             input.readOnly = false;
         });
     
-        document.querySelector('button').textContent = 'Save';
+        document.querySelector('button').textContent = 'Enregistrer';
         document.querySelector('button').id = 'saveButton';
         // saveButton
         document.getElementById('saveButton').addEventListener('click', async e => {
@@ -47,7 +47,7 @@ async function profile (){
             });
             //localStorage.setItem('token', data);
     
-            //window.location = '/profil.html';
+            window.location = '/profil.html';
         });
     });
 
