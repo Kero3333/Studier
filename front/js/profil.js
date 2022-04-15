@@ -52,6 +52,7 @@ async function profile() {
             },
           }
         );
+        document.location.href = "profil.html";
       });
   });
 }
