@@ -35,8 +35,6 @@ const getPopularAnnounces = async () => {
       })
       .reverse();
 
-    console.log(popularAnnounces);
-
     const carousel = document.querySelector(".carousel-inner");
 
     carousel.innerHTML = ``;
@@ -92,12 +90,36 @@ const getPopularAnnounces = async () => {
       });
 
       disp.appendChild(div);
-
-      console.log(picture);
     }
   } catch (err) {
     console.log(err.message);
   }
 };
 
+const getUser = async () => {
+  try {
+    const { data } = await axios.get(
+      "https://strapi3333.herokuapp.com/api/users/me",
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log(data);
+    const logProfil = document.querySelector("#logProfil");
+    logProfil.href = "profil.html";
+
+    logProfil.innerHTML = `
+    <img class="logo-profil" src="${data.picture_profile}" alt="picture">
+    `;
+  } catch (err) {
+    console.log(err.message);
+  }
+};
+
+if (localStorage.getItem("token")) {
+  getUser();
+}
 getPopularAnnounces();
